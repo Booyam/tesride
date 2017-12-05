@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include partials/template/head.ejs %>
+  </head>
+  <body>
+    <% include partials/template/header.ejs %>
+
+<div class="container "> 
+    <button onclick="topFunction()" id="myBtn" class="topBtn fa fa-chevron-up" title="Go to top"></button> 
+    <div class="test">
+        
+        <div class="page-header">
+          <h1>About Us</h1>
+        </div>
+        <p class="lead">Founded in 2017, Tesride is a family owned and operated in the east coast. The Tesride experience is designed to make travel productive, efficient, nourishing, and hassle-free. Our goal is to make everything as simple and pleasant as possible, so you arrive at your destination feeling refreshed. We are constantly looking for ways to make your time in the vehicle as amazing as it can be, and accommodating of the wide variety of goals people have when traveling</p>
+        </div>
+         
+        <hr>
+        
+        <div class="row">
+        <div class="col-md-4">
+          <div class=" ">
+            <img class="img-responsive" src="/images/Tesla-Logo-Black.png" alt="Generic placeholder image"></a>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+        <h1>Contact Us</h1>
+        <h3>Phone</h3>
+        <p>786 XXX XXXX </p>
+        <h3>E-mail</h3>
+        <p>tesride@gmail.com</p>
+        
+
+        </div>
+        <div class="col-md-4">
+          <h1>Book Us</h1>
+          <p>If you have any question or want to book us, please fill the next form up. Thank you!!! </p>
+          
+             <button class="btn btn-danger btn-block event-icon-btn" role="button" data-toggle="modal" data-target="#myModal"><i class="fa fa-envelope" aria-hidden="true">  SEND A REQUEST</i></button>
+           <br>
+       <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h1 class="modal-title" id="myModalLabel">Book us</h1>
+      </div>
+    <div class="modal-body">
+        <h3>Personal Information</h3>
+        <div class="form-group">
+         <label>*Name:</label>
+         <input type="name" class="form-control" size="79" id="fname" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+         <label>*E-mail:</label>
+         <input type="email" class="form-control" size="43" id="email" placeholder="Enter your e-mail someone@example.com">
+         <label>*Phone:</label>
+         <input type="phone" class="form-control" size="18" maxlength="15" id="phone" placeholder="Enter your Phone">
+        </div>
+        
+        <h3>Address</h3>
+        <div class="form-group">
+         <label>*Street:</label>
+         <input type="street" size="78" class="form-control" id="street" placeholder="Enter Street">
+        </div>
+        <div class="form-group">
+         <label>*City:</label>
+         <input type="city"  id="city" class="form-control" placeholder="Enter City">
+         <label>*State:</label>
+         <input type="state"  id="State" class="form-control" placeholder="Enter State">
+         <label>*Zip:</label>
+         <input type="text" size="12" maxlength="5" class="form-control" id="zipcode" placeholder="Enter Zipcode">
+        </div>
+        
+        <h3>Event's Date</h3>
+        <input type="text" size="45" name="daterange" class="form-control" value="01/01/2016 1:00 AM - 01/01/2016 2:00 AM" />
+ 
+<script type="text/javascript">
+$(function() {
+    $('input[name="daterange"]').daterangepicker({
+        timePicker: true,
+        timePickerIncrement: 5,
+        locale: {
+            format: 'MM/DD/YYYY h:mm A'
+        }
+    });
+});
+</script>
+       
+        <h3>Event's Address:(If different from living address)</h3>
+        <div class="form-group">
+         <label>Street:</label>
+         <input type="street" size="79.2" class="form-control" id="street" placeholder="Enter Street">
+        </div>
+        <div class="form-group">
+         <label>City:</label>
+         <input type="city"  id="city" class="form-control" placeholder="Enter City">
+         <label>State:</label>
+         <input type="state"  id="State" class="form-control" placeholder="Enter State">
+         <label>Zip:</label>
+         <input type="text" size="15" maxlength="5" class="form-control" id="zipcode" placeholder="Enter Zipcode">
+        </div>
+        
+        
+    
+      <h3>*Enter your inquiry details here:</h3>
+        <div class="form-group">
+          <textarea class="form-control" rows="3" id="comment" placeholder="Enter your inquiry details here (package name, list of items, or special requests). We will reply within 48 hours."></textarea>
+</div>
+
+    </div><!-- modal-body -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send Message</button>
+      </div><!-- modal-footer -->
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modal -->
+
+
+
+        </div><!-- col-md-4 -->
+        </div><!-- row -->
+        
+       
+      
+      
+      
+
+    </div> <!-- /container -->
+
+
+     <% include partials/template/footer.ejs %>
+    <% include partials/template/jsdefaults.ejs %>
+  </body>
+</html>
