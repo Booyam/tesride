@@ -4,7 +4,7 @@ TESRIDE
 Tech
 -----
 
-Jumper Paradise uses a number of open source projects:
+TESRIDE uses a number of open source projects:
 
 [Bootstrap] - great UI boilerplate for modern web apps
 
